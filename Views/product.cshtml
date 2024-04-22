@@ -1,0 +1,578 @@
+﻿        @using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Product>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+
+    <link rel="stylesheet" href="/assets/fontawesome-5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/toastify-5.7.1/toastify.min.css">
+    <link rel="stylesheet" href="/common/client/css/common.min.css?v=bYkrL8op8G0ONwSEDATrkfYD666YKTHoJL0Fw6n1xd0">
+</head>   
+<body>
+	<nav class="navbar navbar-expand-lg psc-navbar sticky-md-top shadow-sm">
+		<div class="container" bis_skin_checked="1">
+			<a class="navbar-brand" href="#">
+				<img class="img-fluid" src="/assets/img/08560315102021logo_header.png" alt="logo PSC">
+			</a>
+			<button id="icon-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span></span>
+			</button>
+
+			<div class="collapse navbar-collapse pt-4 pt-md-0" id="navbarSupportedContent" bis_skin_checked="1">
+				<ul class="col-12 col-xl-9 navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between align-items-center flex-sm-row">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="/">
+							Trang chủ
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="/introduction">
+							Giới thiệu
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " aria-current="page" href="/product">
+							Sản phẩm
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-outline-primary px-4 py-3 rounded" aria-current="page" href="/contact">
+							Liên hệ chúng tôi
+							<span class="material-icons ps-2"> arrow_forward </span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <div class="page" bis_skin_checked="1">
+        <div class="page-body" bis_skin_checked="1">
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HHn_FcSnStOphoLF8267N0xHVk6KG0QBJe7QmLk916w5BJi8TJjUhfvUtMbkPIrEyJ2hFDZEKP7v1vxCYx-WB-t4Bfyf8ffyFgmCMZT2sLQcPZGn5S6ns9pyP_JCHCpL19etd4WiAnqRL9MoDenNCs">
+
+            <!-- PAGE BANNER -->
+            <div class="page-banner style-2 text-center pt-lg-4" style="background-image: none;" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="page-banner-content row" bis_skin_checked="1">
+                        <div class="col-lg-10 mx-auto" bis_skin_checked="1">
+                            <h1 class="page-banner-content__title psc-fw-600 fs-1 text-shadow mb-4 mb-lg-5 pt-4 pt-lg-5 psc-text-shadow text-uppercase lh-base">
+                                PSC NỔ LỰC NÂNG CAO CHẤT LƯỢNG GIÁO DỤC VÀ ĐÀO TẠO TRONG TỪNG SẢN PHẨM.
+                            </h1>
+                        </div>
+                        <div class="col-lg-7 mx-auto" bis_skin_checked="1">
+                            <p class="page-banner-content__description mb-3 mb-lg-4 lh-base psc-text-shadow">
+                                Gắn công nghệ thông tin với các hoạt động quản lý, hoạt động dạy và học, nâng cao nhận thức, tạo môi trường và cơ hội tiếp cận công nghệ mới trong giáo dục và đào tạo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END PAGE BANNER -->
+            <!-- PAGE PRODUCTS -->
+            <div class="page-products" bis_skin_checked="1">
+                <div class="container py-4 py-md-5" bis_skin_checked="1">
+                    <h2 class="page-products__title fs-1 psc-fw-600 mb-4 mb-md-5 text-capitalize text-center">
+                        SẢN PHẨM CỦA CHÚNG TÔI
+                    </h2>
+                    <div class="row justify-content-center" bis_skin_checked="1">
+                        <div class="col-6 col-md-4 col-lg-3" bis_skin_checked="1">
+                            <div class="card border-0 text-center" bis_skin_checked="1">
+                                <div class="thumb-img mb-2" bis_skin_checked="1">
+                                    <img src="/assets/img/product/11450930122021img-product-01.png" class="img-fluid" alt="Hệ thống SIS, Portal, Mobile app">
+                                </div>
+                                <div class="card-body" bis_skin_checked="1">
+                                    <h5 class="card-title fs-6">
+                                        Hệ thống SIS, Portal, Mobile app
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3" bis_skin_checked="1">
+                            <div class="card border-0 text-center" bis_skin_checked="1">
+                                <div class="thumb-img mb-2" bis_skin_checked="1">
+                                    <img src="/assets/img/product/11451830122021img-product-02.png" class="img-fluid" alt="Dashboard &amp; báo cáo">
+                                </div>
+                                <div class="card-body" bis_skin_checked="1">
+                                    <h5 class="card-title fs-6">
+                                        Dashboard &amp; báo cáo
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3" bis_skin_checked="1">
+                            <div class="card border-0 text-center" bis_skin_checked="1">
+                                <div class="thumb-img mb-2" bis_skin_checked="1">
+                                    <img src="/assets/img/product/11452730122021img-product-03.png" class="img-fluid" alt="Phần mềm thu học phí">
+                                </div>
+                                <div class="card-body" bis_skin_checked="1">
+                                    <h5 class="card-title fs-6">
+                                        Phần mềm thu học phí
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3" bis_skin_checked="1">
+                            <div class="card border-0 text-center" bis_skin_checked="1">
+                                <div class="thumb-img mb-2" bis_skin_checked="1">
+                                    <img src="/assets/img/product/11453530122021img-product-04.png" class="img-fluid" alt="Thời khóa biểu">
+                                </div>
+                                <div class="card-body" bis_skin_checked="1">
+                                    <h5 class="card-title fs-6">
+                                        Thời khóa biểu
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page-products-demo text-center pt-2" bis_skin_checked="1">
+                        <a class="page-products-demo__txt btn psc-btn-outline px-4 py-3 rounded-pill text-uppercase psc-fw-600 " href="http://admin.sis.psctelecom.com.vn/" target="_blank" bis_skin_checked="1">
+                            Yêu cầu demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- END PAGE PRODUCTS -->
+            <!-- SIS, PORTAL & MOBILE APP -->
+            <div class="page-sis psc-bg-light py-4 mb-md-4" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="text-center pt-md-4" bis_skin_checked="1">
+                        <h3 class="page-sis__title text-uppercase fs-5">
+                            SIS, PORTAL &amp; MOBILE APP
+                        </h3>
+                        <h2 class="page-sis__about fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
+                            Chặt chẽ và hiệu quả
+                        </h2>
+                    </div>
+                    <div class="page-sis-content row" bis_skin_checked="1">
+                        <div class="page-sis-content-right col-lg-7 text-center order-lg-2 py-3 mb-3" bis_skin_checked="1">
+                            <img src="/assets/img/product/11443430122021moodle-1.gif" alt="invalid img" class="img-fluid psc-box-shadow">
+                        </div>
+                        <div class="page-sis-content-left col-lg-5 order-lg-1" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="/assets/img/icons/icon-eye.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-sis-content-left__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Trực quan
+                                </h4>
+                            </div>
+                            <p class="page-sis-content-left__description">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                                <br>
+                                <br>Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                            <div class="page-sis-content-left-trial py-4" bis_skin_checked="1">
+                                <a href="/assets/img/product/11443430122021moodle-1.gif" target="_blank" class="btn btn-primary py-3 px-5 rounded-pill text-uppercase psc-fw-500 display-6" bis_skin_checked="1">
+                                    Đăng ký dùng thử
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SIS, PORTAL & MOBILE APP -->
+            <!-- DASHBOARD & BAO CAO -->
+            <div class="page-dashboard pt-4 pb-4" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="text-center" bis_skin_checked="1">
+                        <h3 class="page-dashboard__title text-uppercase fs-5">
+                            DASHBOARD VÀ BÁO CÁO
+                        </h3>
+                        <h2 class="page-dashboard__about fs-1 psc-fw-600 mb-4 mb-md-5 text-capitalize">
+                            Đầy đủ và trực quan
+                        </h2>
+                    </div>
+                    <div class="page-dashboard-bg py-4" bis_skin_checked="1">
+                        <div class="page-dashboard-row row mb-5" bis_skin_checked="1">
+                            <div class="page-dashboard-row-left col-lg-7 d-flex align-items-center mb-lg-0 mb-4" bis_skin_checked="1">
+                                <div class="w-75 mx-auto" bis_skin_checked="1">
+                                    <img src="/assets/img/product/0937271410202109354114102021dashboard_academic_result_statistic.png" class="page-dashboard-row__img img-fluid">
+                                </div>
+                            </div>
+                            <div class="page-dashboard-row-right col-lg-5" bis_skin_checked="1">
+                                <div class="d-flex mb-4" bis_skin_checked="1">
+                                    <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                        <img src="/assets/img/icons/icon-file-full.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <h4 class="page-dashboard-row__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                        Đầy đủ
+                                    </h4>
+                                </div>
+                                <p class="page-dashboard-row__description">
+                                    Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="page-dashboard-row row" bis_skin_checked="1">
+                            <div class="page-dashboard-row-right col-lg-6 order-lg-2 mb-4 text-center" bis_skin_checked="1">
+                                <img src="/assets/img/product/09374314102021dashboard_enrollment_statistic.png" class="page-dashboard-row__img img-fluid">
+                            </div>
+                            <div class="page-dashboard-row-left col-lg-6 order-lg-1 d-flex align-items-center mb-3 mb-lg-0" bis_skin_checked="1">
+                                <div bis_skin_checked="1">
+                                    <div class="d-flex mb-4" bis_skin_checked="1">
+                                        <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                            <img src="/assets/img/icons/icon-eye.svg" alt="" class="img-fluid">
+                                        </div>
+                                        <h4 class="page-dashboard-row__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                            Trực quan
+                                        </h4>
+                                    </div>
+                                    <p class="page-dashboard-row__description">
+                                        Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END DASHBOARD & BAO CAO -->
+            <!-- FEE -->
+            <div class="page-fee psc-bg-gray py-4" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="text-center pt-md-4" bis_skin_checked="1">
+                        <h3 class="page-fee__title text-uppercase fs-5">
+                            PHẦN MỀM THU HỌC PHÍ
+                        </h3>
+                        <h2 class="page-fee__about fs-1 psc-fw-600 mb-4 mb-md-5 text-capitalize">
+                            Đơn giản và chính xác
+                        </h2>
+                    </div>
+                    <div class="page-fee-banner text-center mb-3 mb-md-5" bis_skin_checked="1">
+                        <img src="/assets/img/product/10035914102021fee_inner.png" alt="invalid img" class="page-fee-banner__img img-fluid">
+                    </div>
+                    <div class="page-fee-description row" bis_skin_checked="1">
+                        <div class="page-fee-description-item col-md-6 col-lg-4 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-automatic.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-fee-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Tính phí tự động
+                                </h4>
+                            </div>
+                            <p class="page-fee-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                        </div>
+                        <div class="page-fee-description-item col-md-6 col-lg-4 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-automatic.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-fee-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Quy trình chặt chẽ
+                                </h4>
+                            </div>
+                            <p class="page-fee-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh.
+                            </p>
+                        </div>
+                        <div class="page-fee-description-item col-md-6 col-lg-4 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-automatic.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-fee-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Linh động
+                                </h4>
+                            </div>
+                            <p class="page-fee-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,...
+                            </p>
+                        </div>
+                        <div class="page-fee-description-item col-md-6 col-lg-4 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-automatic.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-fee-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Kiểm soát thu chi
+                                </h4>
+                            </div>
+                            <p class="page-fee-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                        </div>
+                        <div class="page-fee-description-item col-md-6 col-lg-4 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-automatic.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-fee-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Báo cáo đầy đủ
+                                </h4>
+                            </div>
+                            <p class="page-fee-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                        </div>
+                        <div class="page-fee-description-item col-md-6 col-lg-4 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-automatic.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-fee-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Tích hợp
+                                </h4>
+                            </div>
+                            <p class="page-fee-description-item__content">
+                                học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END FEE -->
+            <!-- Timetables -->
+            <div class="page-timetables py-4" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="text-center pt-md-4" bis_skin_checked="1">
+                        <h3 class="page-timetables__title text-uppercase fs-5">
+                            THỜI KHÓA BIỂU
+                        </h3>
+                        <h2 class="page-timetables__about fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
+                            Nhanh chóng và phù hợp
+                        </h2>
+                    </div>
+                    <div class="page-timetables-row mb-5 text-center" bis_skin_checked="1">
+                        <div class="page-timetables-row-left" bis_skin_checked="1">
+                            <img class="img-fluid" src="/assets/img/product/10212114102021timetable_inner.png" alt="invalid img">
+                        </div>
+                    </div>
+                    <div class="page-timetables-description row" bis_skin_checked="1">
+                        <div class="page-timetables-description-item col-sm-6 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-rocket.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-timetables-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Tốc độ xử lý nhanh
+                                </h4>
+                            </div>
+                            <p class="page-timetables-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                        </div>
+                        <div class="page-timetables-description-item col-sm-6 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-rocket.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-timetables-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Bộ ràng buộc đầy đủ
+                                </h4>
+                            </div>
+                            <p class="page-timetables-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
+                            </p>
+                        </div>
+                        <div class="page-timetables-description-item col-sm-6 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-rocket.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-timetables-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Linh hoạt kéo thả
+                                </h4>
+                            </div>
+                            <p class="page-timetables-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh.
+                            </p>
+                        </div>
+                        <div class="page-timetables-description-item col-sm-6 mb-2 mb-md-4" bis_skin_checked="1">
+                            <div class="d-flex mb-4" bis_skin_checked="1">
+                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
+                                    <img src="assets/img/icons/icon-rocket.svg" alt="" class="img-fluid">
+                                </div>
+                                <h4 class="page-timetables-description-item__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
+                                    Công bố TKB qua Portal và App
+                                </h4>
+                            </div>
+                            <p class="page-timetables-description-item__content">
+                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Timetables -->
+            <!-- Customers Feeling -->
+            <div class="page-customers-feeling pb-4 overflow-hidden" bis_skin_checked="1">
+                <div class="container text-center" bis_skin_checked="1">
+                    <div class="px-3 px-lg-5" bis_skin_checked="1">
+                        <div class="customers-feeling-box psc-bg-box px-3 pt-4 px-lg-5 pt-lg-5 pb-3" bis_skin_checked="1">
+                            <h2 class="customers-feeling__title fs-1 psc-fw-600 mb-3 text-capitalize">
+                                Cảm nhận của khách hàng
+                            </h2>
+                            <div class="psc-w-15 mx-auto" bis_skin_checked="1">
+                                <img src="assets/img/icons/icon-quote.svg" alt="" class="img-fluid mb-3 mb-lg-5">
+                            </div>
+
+                            <div class="customers-feeling-box-slide" bis_skin_checked="1">
+                                <div class="customers-feeling-box-slide-list" bis_skin_checked="1">
+                                    <div class="feeling-box-slide-item" bis_skin_checked="1">
+                                        <div class="col-lg-10 mx-auto" bis_skin_checked="1">
+                                            <p class="feeling-box-slide-item__content mb-4">
+                                                Tôi đã làm việc với PSC gần 3 năm nay, và hoàn toàn hài lòng. PSC với một đội ngũ nhân viên nhiệt tình, và đầy tâm huyết. Họ đã rất hiểu và nắm bắt được yêu cầu cũng như mong đợi của khách hàng. Khi mình làm việc với PSC, tôi có 1 niềm tin rất vững chắc và chắc chắn PSC là 1 đơn vị uy tín để mình gắn bó lâu dài
+                                            </p>
+                                            <div class="psc-thumb mx-auto" bis_skin_checked="1">
+                                                <img class="img-fluid img-thumbnail rounded-circle border-1" src="/assets/img/product/14145814102021ceo_profile.png" alt="testimonial">
+                                            </div>
+
+                                            <div class="feeling-box-slide-item-name pt-3 pt-lg-4" bis_skin_checked="1">
+                                                <h6 class="feeling-box-slide-item-name__txt">
+                                                    Nguyễn Văn Minh
+                                                </h6>
+                                                <p class="feeling-box-slide-item-name__position fs-6">
+                                                    CEO
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END Customers Feeling -->
+            <!-- SIGNUP FOR TRIAL-->
+            <div class="trial py-5" bis_skin_checked="1">
+                <div class="container text-center" bis_skin_checked="1">
+                    <h3 class="trial__title text-uppercase fs-3 fw-bold mb-4">
+                        Đăng ký dùng thử
+                    </h3>
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-md-9 col-lg-6 col-xl-5 mx-auto" bis_skin_checked="1">
+                            <p class="trial__description mb-4">
+                                Chúng tôi cung cấp miễn phí bản dùng thử trong vòng <br> 7 ngày. Đăng ký để trải nghiệm ngay hôm nay.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" bis_skin_checked="1">
+                        <div class="col-md-7 mx-auto" bis_skin_checked="1">
+                            <div class="input-group" bis_skin_checked="1">
+                                <input type="text" class="form-control py-3" placeholder="Nhập email của bạn" aria-label="Nhập email của bạn" aria-describedby="button-addon2" data-validation-required-message="Vui lòng nhập trường này" data-validation-email-message="Vui lòng nhập email của bạn">
+                                <button type="submit" id="btnSave" class="btn btn-primary col-sm-3 col-md-2">
+                                    <i class="fa fa-spin fa-spinner margin-r-5" style="display: none"></i>
+                                    Đăng ký
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SIGNUP FOR TRIAL-->
+        </div>
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="container pt-4" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
+                        <div class=" container-item d-flex justify-content-center justify-content-md-start" bis_skin_checked="1">
+                            <img src="/assets/img/logo-white.svg" class="img-fluid" alt="logo PSC white">
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">
+                                Cài đặt SIS Mobile
+                            </h5>
+
+                            <div class="d-flex" bis_skin_checked="1">
+                                <img class="img-fluid" src="/assets/img/QR.png" alt="QR">
+                                <div class="ms-2 d-flex flex-column" bis_skin_checked="1">
+                                    <a href="#" title="" class="mb-auto">
+                                        <img class="img-fluid" src="/assets/img/Google-Play.svg" alt="Google Play">
+                                    </a>
+                                    <a href="#" title="">
+                                        <img class="img-fluid" src="/assets/img/App-Store.svg" alt="Apple store">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">Thông tin</h5>
+                            <div class="container-item-box" bis_skin_checked="1">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" title="">Trang chủ</a></li>
+                                    <li class="mb-1">
+                                        <a href="#" title="">Về chúng tôi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">Sản phẩm</h5>
+                            <div class="container-item-box" bis_skin_checked="1">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1">
+                                        <a href="#" title="">SIS System</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="#" title="">Portal &amp; App</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="#" title="">Moodle &amp; Canvas</a>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <a href="#" title="">Dashboard &amp; báo cáo</a>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <a href="#" title="">Xếp thời khóa biểu</a>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <a href="#" title="">Phần mềm học phí</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">Liên hệ</h5>
+                            <div class="container-item-box" bis_skin_checked="1">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1 d-flex">
+                                        <span class="material-icons me-2"> place</span><span>5 Hoa Sữa, Phường 7, Quận Phú Nhuận.</span>
+                                    </li>
+                                    <li class="mb-1 d-flex">
+                                        <span class="material-icons me-2"> call </span><span>03030303030</span>
+                                    </li>
+                                    <li class="mb-1 d-flex">
+                                        <span class="material-icons me-2">
+                                            mail_outline
+                                        </span>
+
+                                        <a href="pscsisteam@gmail.com" title="" bis_skin_checked="1">pscsisteam@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3" bis_skin_checked="1">
+                Copyright © 2021. All rights reserved.
+            </div>
+        </footer>
+
+        <!--END FOOTER-->
+    </div>
+</body>

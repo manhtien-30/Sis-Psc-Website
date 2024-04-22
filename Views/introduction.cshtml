@@ -1,0 +1,241 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Introduction>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = null;
+}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trang chủ</title>
+
+	<link rel="stylesheet" href="/assets/fontawesome-5.15.4/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="/assets/toastify-5.7.1/toastify.min.css">
+	<link rel="stylesheet" href="/common/client/css/common.min.css?v=bYkrL8op8G0ONwSEDATrkfYD666YKTHoJL0Fw6n1xd0">
+</head>
+<body>
+	    <nav class="navbar navbar-expand-lg psc-navbar sticky-md-top shadow-sm">
+		    <div class="container" bis_skin_checked="1">
+			    <a class="navbar-brand" href="#">
+				    <img class="img-fluid" src="/assets/img/08560315102021logo_header.png" alt="logo PSC">
+			    </a>
+			    <button id="icon-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span></span>
+			    </button>
+
+			    <div class="collapse navbar-collapse pt-4 pt-md-0" id="navbarSupportedContent" bis_skin_checked="1">
+				    <ul class="col-12 col-xl-9 navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between align-items-center flex-sm-row">
+					    <li class="nav-item">
+						    <a class="nav-link active" aria-current="page" href="/">
+							    Trang chủ
+						    </a>
+					    </li>
+					    <li class="nav-item">
+						    <a class="nav-link " aria-current="page" href="/introduction">
+							    Giới thiệu
+						    </a>
+					    </li>
+					    <li class="nav-item">
+                             <a class="nav-link " aria-current="page" href="/product">
+							    Sản phẩm
+						    </a>
+					    </li>
+					    <li class="nav-item">
+						    <a class="nav-link btn btn-outline-primary px-4 py-3 rounded" aria-current="page" href="/contact">
+							    Liên hệ chúng tôi
+							    <span class="material-icons ps-2"> arrow_forward </span>
+						    </a>
+					    </li>
+				    </ul>
+			    </div>
+		    </div>
+	    </nav>
+    <div class="page" bis_skin_checked="1">
+        <div class="page-body" bis_skin_checked="1">
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HHn_FcSnStOphoLF8267N1blK3D3JuKTPlagjKqPYFYpG9mYeeIHjJotvgcXT6FTdvA3rqgxVyflsc9g-_O8iyUTBwjcRXrGKo7r6N42HxuJSoc5kXT9YAg15RvU4eQISMPfDD3rYZotxedPs7rm60">
+
+            <!-- .page-banner -->
+            <div class="page-banner style-1" style="background-image: none;" bis_skin_checked="1"></div>
+            <!-- /.page-banner -->
+            <!-- .page-content -->
+            <div class="page-content" bis_skin_checked="1">
+                <div class="container" bis_skin_checked="1">
+                    <div class="psc-w-lg-90 mx-auto psc-bg-fff psc-mt-fluid" bis_skin_checked="1">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-lg-10 mx-auto" bis_skin_checked="1">
+                                <div class="page-content-img text-center py-4 mb-md-2" bis_skin_checked="1">
+                                    <div class="psc-w-15 mx-auto" bis_skin_checked="1">
+                                        <img class="img-fluid" src="/assets/img/about/09161613102021456-handshake-deal-outline 1.png" alt="invalid img">
+                                    </div>
+                                </div>
+                                <h1 class="page-content__title display-5 psc-fw-600 text-uppercase text-center mb-3 mb-md-5">
+                                    Về chúng tôi
+                                </h1>
+                                <p class="page-content__description">
+                                    PSC là nhà cung cấp giải pháp hàng đầu Việt nam trong lĩnh vực giáo dục và đào tạo. Đã có hơn 40 trường đại học/cao đẳng , 4 sở giáo dục và trên 100 trường THPT phía nam sử dụng các sản phẩm của PSC.
+                                    <br>
+                                    <br>Sau hơn nhiều năm nghiên cứu và phát triển, PSC đã chính thức cho ra mắt giải pháp hệ thống thông tin tổng thể quản trị trường đại học/cao đẳng PSC University ERP kết nối cổng thông tin (PSC University Portal), tích hợp hơn 15 giải pháp đáp ứng mọi nhu cầu về hệ thống thông tin quản trị tại một trường đại học và cao đẳng. PSC University ERP ngay lập tức đã được rất nhiều trường đại học quan tâm và hiện đã được triển khai thành công tại nhiều trường đại học lớn ở TPHCM và các tỉnh phía nam. Giải pháp tổng thể PSC University ERP hiện nay được xem là tốt nhất và đầy đủ nhất có trên thị trường trong lĩnh vực này.
+                                    <br>
+                                    <br>Hiện tại số trường đại học tại TPHCM đã tìm hiểu và chọn để triển khai 6 giải pháp cơ bản trong gói sản phẩm PSC University ERP gồm:
+                                    <br>
+                                    <br>PSC UIS - Hệ thống quản lý đào tạo theo học chế tín chỉ PSC University Portal - Cổng thông tin điện tử đại học
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.page-content -->
+            <!-- .page-bottom -->
+            <div class="page-bottom" bis_skin_checked="1">
+                <div class="container page-cards" bis_skin_checked="1">
+                    <div class="psc-w-lg-90 mx-auto mt-5" bis_skin_checked="1">
+                        <div class="col-lg-10 mx-auto" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class="col-lg-4" bis_skin_checked="1">
+                                    <div class="card border-0 mb-4" bis_skin_checked="1">
+                                        <img src="/assets/img/about/0955481310202109525613102021businessman-with-stiffened-hand-lit-light-bulb 1.png" class="card-img-top" alt="300x200">
+                                        <div class="card-body" bis_skin_checked="1">
+                                            <h5 class="card-title">Tầm nhìn</h5>
+                                            <p class="card-text">
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4" bis_skin_checked="1">
+                                    <div class="card border-0 mb-4" bis_skin_checked="1">
+                                        <img src="/assets/img/about/0956051310202109525613102021businessman-with-stiffened-hand-lit-light-bulb 1.png" class="card-img-top" alt="300x200">
+                                        <div class="card-body" bis_skin_checked="1">
+                                            <h5 class="card-title">Sứ mệnh</h5>
+                                            <p class="card-text">
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4" bis_skin_checked="1">
+                                    <div class="card border-0 mb-4" bis_skin_checked="1">
+                                        <img src="/assets/img/about/0956201310202109525613102021businessman-with-stiffened-hand-lit-light-bulb 1.png" class="card-img-top" alt="300x200">
+                                        <div class="card-body" bis_skin_checked="1">
+                                            <h5 class="card-title">Giá trị cốt lõi</h5>
+                                            <p class="card-text">
+                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.page-bottom -->
+
+        </div>
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="container pt-4" bis_skin_checked="1">
+                <div class="row" bis_skin_checked="1">
+                    <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
+                        <div class=" container-item d-flex justify-content-center justify-content-md-start" bis_skin_checked="1">
+                            <img src="/assets/img/logo-white.svg" class="img-fluid" alt="logo PSC white">
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">
+                                Cài đặt SIS Mobile
+                            </h5>
+
+                            <div class="d-flex" bis_skin_checked="1">
+                                <img class="img-fluid" src="/assets/img/QR.png" alt="QR">
+                                <div class="ms-2 d-flex flex-column" bis_skin_checked="1">
+                                    <a href="#" title="" class="mb-auto">
+                                        <img class="img-fluid" src="/assets/img/Google-Play.svg" alt="Google Play">
+                                    </a>
+                                    <a href="#" title="">
+                                        <img class="img-fluid" src="/assets/img/App-Store.svg" alt="Apple store">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-2" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">Thông tin</h5>
+                            <div class="container-item-box" bis_skin_checked="1">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1"><a href="#" title="">Trang chủ</a></li>
+                                    <li class="mb-1">
+                                        <a href="#" title="">Về chúng tôi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">Sản phẩm</h5>
+                            <div class="container-item-box" bis_skin_checked="1">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1">
+                                        <a href="#" title="">SIS System</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="#" title="">Portal &amp; App</a>
+                                    </li>
+                                    <li class="mb-1">
+                                        <a href="#" title="">Moodle &amp; Canvas</a>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <a href="#" title="">Dashboard &amp; báo cáo</a>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <a href="#" title="">Xếp thời khóa biểu</a>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <a href="#" title="">Phần mềm học phí</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
+                        <div class="container-item" bis_skin_checked="1">
+                            <h5 class="container-item__title fs-6">Liên hệ</h5>
+                            <div class="container-item-box" bis_skin_checked="1">
+                                <ul class="list-unstyled">
+                                    <li class="mb-1 d-flex">
+                                        <span class="material-icons me-2"> place</span><span>5 Hoa Sữa, Phường 7, Quận Phú Nhuận.</span>
+                                    </li>
+                                    <li class="mb-1 d-flex">
+                                        <span class="material-icons me-2"> call </span><span>03030303030</span>
+                                    </li>
+                                    <li class="mb-1 d-flex">
+                                        <span class="material-icons me-2">
+                                            mail_outline
+                                        </span>
+
+                                        <a href="pscsisteam@gmail.com" title="" bis_skin_checked="1">pscsisteam@gmail.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3" bis_skin_checked="1">
+                Copyright © 2021. All rights reserved.
+            </div>
+        </footer>
+
+        <!--END FOOTER-->
+    </div>
+</body>
