@@ -2,7 +2,7 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Introduction>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
-    Layout = null;
+    Layout = "layout.cshtml";
 }
 <head>
 	<meta charset="utf-8">
@@ -15,42 +15,6 @@
 	<link rel="stylesheet" href="/common/client/css/common.min.css?v=bYkrL8op8G0ONwSEDATrkfYD666YKTHoJL0Fw6n1xd0">
 </head>
 <body>
-	    <nav class="navbar navbar-expand-lg psc-navbar sticky-md-top shadow-sm">
-		    <div class="container" bis_skin_checked="1">
-			    <a class="navbar-brand" href="#">
-				    <img class="img-fluid" src="/assets/img/08560315102021logo_header.png" alt="logo PSC">
-			    </a>
-			    <button id="icon-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span></span>
-			    </button>
-
-			    <div class="collapse navbar-collapse pt-4 pt-md-0" id="navbarSupportedContent" bis_skin_checked="1">
-				    <ul class="col-12 col-xl-9 navbar-nav ms-auto mb-2 mb-lg-0 justify-content-between align-items-center flex-sm-row">
-					    <li class="nav-item">
-						    <a class="nav-link active" aria-current="page" href="/">
-							    Trang chủ
-						    </a>
-					    </li>
-					    <li class="nav-item">
-						    <a class="nav-link " aria-current="page" href="/introduction">
-							    Giới thiệu
-						    </a>
-					    </li>
-					    <li class="nav-item">
-                             <a class="nav-link " aria-current="page" href="/product">
-							    Sản phẩm
-						    </a>
-					    </li>
-					    <li class="nav-item">
-						    <a class="nav-link btn btn-outline-primary px-4 py-3 rounded" aria-current="page" href="/contact">
-							    Liên hệ chúng tôi
-							    <span class="material-icons ps-2"> arrow_forward </span>
-						    </a>
-					    </li>
-				    </ul>
-			    </div>
-		    </div>
-	    </nav>
     <div class="page" bis_skin_checked="1">
         <div class="page-body" bis_skin_checked="1">
             <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HHn_FcSnStOphoLF8267N1blK3D3JuKTPlagjKqPYFYpG9mYeeIHjJotvgcXT6FTdvA3rqgxVyflsc9g-_O8iyUTBwjcRXrGKo7r6N42HxuJSoc5kXT9YAg15RvU4eQISMPfDD3rYZotxedPs7rm60">
@@ -134,108 +98,5 @@
             <!-- /.page-bottom -->
 
         </div>
-        <!--FOOTER-->
-        <footer class="footer">
-            <div class="container pt-4" bis_skin_checked="1">
-                <div class="row" bis_skin_checked="1">
-                    <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
-                        <div class=" container-item d-flex justify-content-center justify-content-md-start" bis_skin_checked="1">
-                            <img src="/assets/img/logo-white.svg" class="img-fluid" alt="logo PSC white">
-                        </div>
-                    </div>
-                    <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
-                        <div class="container-item" bis_skin_checked="1">
-                            <h5 class="container-item__title fs-6">
-                                Cài đặt SIS Mobile
-                            </h5>
-
-                            <div class="d-flex" bis_skin_checked="1">
-                                <img class="img-fluid" src="/assets/img/QR.png" alt="QR">
-                                <div class="ms-2 d-flex flex-column" bis_skin_checked="1">
-                                    <a href="#" title="" class="mb-auto">
-                                        <img class="img-fluid" src="/assets/img/Google-Play.svg" alt="Google Play">
-                                    </a>
-                                    <a href="#" title="">
-                                        <img class="img-fluid" src="/assets/img/App-Store.svg" alt="Apple store">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-lg-2" bis_skin_checked="1">
-                        <div class="container-item" bis_skin_checked="1">
-                            <h5 class="container-item__title fs-6">Thông tin</h5>
-                            <div class="container-item-box" bis_skin_checked="1">
-                                <ul class="list-unstyled">
-                                    <li class="mb-1"><a href="#" title="">Trang chủ</a></li>
-                                    <li class="mb-1">
-                                        <a href="#" title="">Về chúng tôi</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
-                        <div class="container-item" bis_skin_checked="1">
-                            <h5 class="container-item__title fs-6">Sản phẩm</h5>
-                            <div class="container-item-box" bis_skin_checked="1">
-                                <ul class="list-unstyled">
-                                    <li class="mb-1">
-                                        <a href="#" title="">SIS System</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a href="#" title="">Portal &amp; App</a>
-                                    </li>
-                                    <li class="mb-1">
-                                        <a href="#" title="">Moodle &amp; Canvas</a>
-                                    </li>
-
-                                    <li class="mb-1">
-                                        <a href="#" title="">Dashboard &amp; báo cáo</a>
-                                    </li>
-
-                                    <li class="mb-1">
-                                        <a href="#" title="">Xếp thời khóa biểu</a>
-                                    </li>
-
-                                    <li class="mb-1">
-                                        <a href="#" title="">Phần mềm học phí</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
-                        <div class="container-item" bis_skin_checked="1">
-                            <h5 class="container-item__title fs-6">Liên hệ</h5>
-                            <div class="container-item-box" bis_skin_checked="1">
-                                <ul class="list-unstyled">
-                                    <li class="mb-1 d-flex">
-                                        <span class="material-icons me-2"> place</span><span>5 Hoa Sữa, Phường 7, Quận Phú Nhuận.</span>
-                                    </li>
-                                    <li class="mb-1 d-flex">
-                                        <span class="material-icons me-2"> call </span><span>03030303030</span>
-                                    </li>
-                                    <li class="mb-1 d-flex">
-                                        <span class="material-icons me-2">
-                                            mail_outline
-                                        </span>
-
-                                        <a href="pscsisteam@gmail.com" title="" bis_skin_checked="1">pscsisteam@gmail.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright text-center py-3" bis_skin_checked="1">
-                Copyright © 2021. All rights reserved.
-            </div>
-        </footer>
-
-        <!--END FOOTER-->
     </div>
 </body>

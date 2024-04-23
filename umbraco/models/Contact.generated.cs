@@ -18,7 +18,7 @@ using Umbraco.Extensions;
 
 namespace Umbraco.Cms.Web.Common.PublishedModels
 {
-	/// <summary>contact</summary>
+	/// <summary>Contact</summary>
 	[PublishedModel("contact")]
 	public partial class Contact : PublishedContentModel
 	{
