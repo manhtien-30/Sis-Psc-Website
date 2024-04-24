@@ -40,12 +40,12 @@
     <!-- Render child page ---->
     @RenderBody()
     <!-- Foooter --->
-    <footer class="footer">
+    <footer class="footer" style="background-color: rgb(91,209,215);">
     <div class="container pt-4" bis_skin_checked="1">
         <div class="row" bis_skin_checked="1">
             <div class="col-sm-4 col-lg-2" bis_skin_checked="1">
                 <div class=" container-item d-flex justify-content-center justify-content-md-start" bis_skin_checked="1">
-                    <img src="/assets/img/logo-white.svg" class="img-fluid" alt="logo PSC white">
+                    <img src="@site.Logo.Url()" class="img-fluid" alt="logo PSC white">
                 </div>
             </div>
             <div class="col-sm-5 col-lg-3" bis_skin_checked="1">
@@ -53,15 +53,14 @@
                     <h5 class="container-item__title fs-6">
                         Cài đặt SIS Mobile
                     </h5>
-
                     <div class="d-flex" bis_skin_checked="1">
-                        <img class="img-fluid" src="/assets/img/QR.png" alt="QR">
+                        <img class="img-fluid" src="@site.QrCode.Url()" alt="QR">
                         <div class="ms-2 d-flex flex-column" bis_skin_checked="1">
                             <a href="#" title="" class="mb-auto">
-                                <img class="img-fluid" src="/assets/img/Google-Play.svg" alt="Google Play">
+                                <img class="img-fluid" src= "@site.ChPlay.Url()" alt="Google Play">
                             </a>
                             <a href="#" title="">
-                                <img class="img-fluid" src="/assets/img/App-Store.svg" alt="Apple store">
+                                <img class="img-fluid" src="@site.AppStore.Url()" alt="Apple store">
                             </a>
                         </div>
                     </div>
