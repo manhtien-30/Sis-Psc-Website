@@ -1,5 +1,5 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
-@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
     Layout = null;
@@ -19,10 +19,11 @@
     <link rel="stylesheet" href="/common/client/css/common.min.css?v=bYkrL8op8G0ONwSEDATrkfYD666YKTHoJL0Fw6n1xd0">
 </head>
 <body>
+    <!--Navigation---->
     <nav class="navbar navbar-expand-lg psc-navbar sticky-md-top shadow-sm">
     <div class="container" bis_skin_checked="1">
         <a class="navbar-brand" href="#">
-            <img class="image-responsive" src=" @Model.Logo.Url()" alt="logo PSC" style="background: no-repeat; ">
+            <img class="image-responsive" src=" @site.Logo.Url()" alt="logo PSC" style="background: no-repeat; ">
         </a>
         <button id="icon-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
@@ -34,8 +35,11 @@
             </ul>
         </div>
     </div>
-</nav>
+    </nav>
+    <!-----end Navigation---->
+    <!-- Render child page ---->
     @RenderBody()
+    <!-- Foooter --->
     <footer class="footer">
     <div class="container pt-4" bis_skin_checked="1">
         <div class="row" bis_skin_checked="1">
@@ -135,6 +139,7 @@
     <div class="footer-copyright text-center py-3" bis_skin_checked="1">
         Copyright © 2021. All rights reserved.
     </div>
-</footer>
+    </footer>
+    <!---end footer-->
 
 </body>

@@ -4,6 +4,8 @@
 @{
 	Layout = "layout.cshtml";
 }
+
+<link rel="stylesheet" href="@Url.Content("~/css/blockgrid.css")" />
 <body>
     <div class="page" bis_skin_checked="1">
         <div class="page-body" bis_skin_checked="1">
@@ -13,25 +15,7 @@
             <!--HOME TOP-->
             <section class="home-top pt-4">
                 <div class="container" bis_skin_checked="1">
-                    <div class="row align-items-center" bis_skin_checked="1">
-                        <div class="col-lg-6 pb-5" bis_skin_checked="1">
-                            <h1 class="home-top__title fw-bolder display-4 text-uppercase mb-3 mb-md-4">
-                                Số hóa<br>Ngành giáo dục
-                            </h1>
-                            <p class="home-top__description mb-5">
-                                PSC đồng hành cùng mục tiêu chuyển đối số ngành giáo dục của Bộ GD&amp;ĐT, thúc đẩy mạnh mẽ sự phát triển của nền giáo dục, qua đó nâng cao chất lượng đào tạo của giáo viên cũng như khả năng thích ứng công nghệ của các thế hệ học sinh ngay từ trên ghế nhà trường.
-                            </p>
-                            <div class="home-top-bottom" bis_skin_checked="1">
-                                <a href="http://admin.sis.psctelecom.com.vn/" target="_blank" class="btn btn-primary py-3 px-5 rounded-pill
-                        text-uppercase psc-fw-500 display-6">
-                                    Dùng thử miễn phí
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 text-center pb-4" bis_skin_checked="1">
-                            <img class="img-fluid" src="/assets/img/home/09033112102021home-top.png">
-                        </div>
-                    </div>
+                    @await Html.GetBlockGridHtmlAsync(Model.Content)
                 </div>
             </section>
             <!--END HOME TOP-->
@@ -85,164 +69,28 @@
             <!--SIS SYSTEM-->
             <div class="sis-system pt-2" bis_skin_checked="1">
                 <div class="container" bis_skin_checked="1">
-                    <div class="row position-relative" bis_skin_checked="1">
-                        <div class="col-lg-7 pt-2 pt-md-4" bis_skin_checked="1">
-                            <div class="sis-system-desc" bis_skin_checked="1">
-                                <h3 class="sis-system-desc__title text-uppercase fs-5">
-                                    HỆ THỐNG SIS
-                                </h3>
-                                <h2 class="sis-system-desc__section fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
-                                    Giải quyết khó khăn<br>trong công tác quản lý giáo dục
-                                </h2>
-                                <p class="sis-system-desc__content">
-                                    Giúp nhà trường giải quyết các vấn đề liên quan đến công tác quản lý thông tin, hồ sơ học sinh giáo viên. Kiểm soát chương trình học, khóa học. Tránh tình trạng chồng chéo hoặc trùng lắp công việc, khó quản lý lịch làm việc của giáo viên.
-                                </p>
-                                <div class="read-more" bis_skin_checked="1">
-                                    <a href="#" title="Xem Thêm" class="read-more__txt psc-fw-600">
-                                        Xem thêm
-                                        <span class="material-icons"> navigate_next </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sis-system-banner text-end" bis_skin_checked="1">
-                        <img src="/assets/img/home/11424630122021sis-bg.png" class="sis-system-banner__main img-fluid">
-                    </div>
+                    @await Html.GetBlockGridHtmlAsync(Model.Sis_content)
                 </div>
             </div>
             <!--END SIS SYSTEM-->
             <!-- PORTAL -->
             <div class="portal psc-bg-light pt-4 mb-md-4" bis_skin_checked="1">
                 <div class="container" bis_skin_checked="1">
-                    <div class="row" bis_skin_checked="1">
-                        <div class="col-lg-10 mx-auto text-center pt-md-4" bis_skin_checked="1">
-                            <h3 class="portal__title text-uppercase fs-5">
-                                Portal &amp; App
-                            </h3>
-                            <h2 class="portal__about fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
-                                Kết nối dễ dàng thông qua<br>cổng thông tin điện tử và ứng dụng di động
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="row" bis_skin_checked="1">
-                        <div class="col-lg-6" bis_skin_checked="1">
-                            <div class="portal-row-left-item mb-4" bis_skin_checked="1">
-                                <h4 class="left-item__title psc-fw-600 fs-3">Giáo viên</h4>
-                                <p class="left-item__desc">
-                                    Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
-                                </p>
-                                <div class="read-more" bis_skin_checked="1">
-                                    <a href="#" title="Xem Thêm" class="read-more__txt psc-fw-600">
-                                        Xem thêm
-                                        <span class="material-icons"> navigate_next </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portal-row-left-item mb-4" bis_skin_checked="1">
-                                <h4 class="left-item__title psc-fw-600 fs-3">Học sinh</h4>
-                                <p class="left-item__desc">
-                                    Giúp Học sinh cập nhật nhanh chóng các thông báo của nhà trường, lịch học, kết quả học tập, rèn luyện, đăng ký môn học, đăng ký phúc khảo điểm,... đồng thời trao đổi thông tin dễ dàng với giáo viên chủ nhiệm và giáo viên bộ môn thông qua tính năng Chat tính hợp ngay trên cổng thông tin điện tử và ứng dụng di động SIS.
-                                </p>
-                                <div class="read-more" bis_skin_checked="1">
-                                    <a href="#" title="Xem Thêm" class="read-more__txt psc-fw-600">
-                                        Xem thêm
-                                        <span class="material-icons"> navigate_next </span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portal-row-left-item mb-4" bis_skin_checked="1">
-                                <h4 class="left-item__title psc-fw-600 fs-3">Phụ huynh</h4>
-                                <p class="left-item__desc">
-                                    Cung cấp thông tin về kết quả học tập, rèn luyện, lịch học, thông tin y tế, học phí,... của học sinh trong suốt quá trình học tập tại trường cũng như tạo kênh trao đổi thông tin giữa Giáo viên và Phụ huynh, Nhà trường. Ngoài ra, cổng thông tin điện tử liên kết với ngân hàng giúp Phụ huynh đóng phí nhanh chóng bằng hình thức chuyển khoản.
-                                </p>
-                                <div class="read-more" bis_skin_checked="1">
-                                    <a href="#" title="Xem Thêm" class="read-more__txt psc-fw-600">
-                                        Xem thêm
-                                        <span class="material-icons"> navigate_next </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 portal-row-right text-end d-flex align-items-end" bis_skin_checked="1">
-                            <img src="/assets/img/home/10321812102021home_portal.png" alt="img invalid" class="portal-row-right__img img-fluid">
-                        </div>
-                    </div>
+                    @await Html.GetBlockGridHtmlAsync(Model.Portal)
                 </div>
             </div>
             <!-- END PORTAL-->
             <!--MOODLE & CANVAS-->
             <div class="moodle pt-2 mb-4" bis_skin_checked="1">
                 <div class="container" bis_skin_checked="1">
-                    <div class="row" bis_skin_checked="1">
-                        <div class="col-xl-6 order-xl-2 pb-2 pt-4 d-flex align-items-center justify-content-center" bis_skin_checked="1">
-                            <div class="moodle-row mb-4" bis_skin_checked="1">
-                                <div class="moodle-row-right" bis_skin_checked="1">
-                                    <h3 class="moodle-row-right__title fs-5 text-uppercase">
-                                        Moodle &amp; Canvas
-                                    </h3>
-                                    <h2 class="moodle-row-right__about fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
-                                        Tích hợp hệ thống quản lý học tập E-learning<br>và các ứng dụng dạy học trực tuyến
-                                    </h2>
-                                    <p class="moodle-row-right__description">
-                                        SIS đã tích hợp thành công với hai hệ thống quản lý học tập hàng đầu Thế giới là Moodle và Canvas, hỗ trợ nhiều công cụ và hoạt động tương tác giữa Giáo viên và Học sinh, đồng thời cũng đã tích hợp với các ứng dụng dạy học trực tuyến như BigBlueButton, Zoom, MS Team, Google Meet.
-                                    </p>
-                                    <div class="read-more" bis_skin_checked="1">
-                                        <a href="#" title="Xem Thêm" class="read-more__txt psc-fw-600">
-                                            Xem thêm
-                                            <span class="material-icons"> navigate_next </span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 order-xl-1 d-flex align-items-center justify-content-center position-relative py-5" bis_skin_checked="1">
-                            <div bis_skin_checked="1">
-                                <div class="psc-thumb-1 w-50" bis_skin_checked="1">
-                                    <img class="img-fluid" src="/assets/img/bg/thumb-bg-1.svg" alt="bg">
-                                </div>
-                                <div class="psc-thumb-2 w-5" bis_skin_checked="1">
-                                    <img class="img-fluid" src="/assets/img/bg/thumb-bg-2.svg" alt="bg">
-                                </div>
-                                <div class="psc-thumb-3 w-5" bis_skin_checked="1">
-                                    <img class="img-fluid" src="/assets/img/bg/thumb-bg-3.svg" alt="bg">
-                                </div>
-                                <img src="/assets/img/home/13571812102021Moodle.png" alt="invalid img" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @await Html.GetBlockGridHtmlAsync(Model.Moodle)
+                </div> 
             </div>
             <!--END MOODLE & CANVAS-->
             <!-- SIS DASHBOARD-->
             <div class="dashboard psc-bg-gray pt-4" bis_skin_checked="1">
                 <div class="container" bis_skin_checked="1">
-                    <div class="row" bis_skin_checked="1">
-                        <div class="col-xl-5 d-flex align-items-center" bis_skin_checked="1">
-                            <div class="dashboard-left pb-4" bis_skin_checked="1">
-                                <h3 class="dashboard-left__title fs-5 text-uppercase">
-                                    Dashboard &amp; báo cáo
-                                </h3>
-                                <h2 class="dashboard-left__about fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
-                                    Báo cáo đầy đủ,<br>trực quan
-                                </h2>
-                                <p class="dashboard-left__description">
-                                    Hệ thống báo cáo đáp ứng yêu cầu của Bộ GD&amp;ĐT và công tác quản lý của Nhà trường.
-                                </p>
-                                <div class="read-more" bis_skin_checked="1">
-                                    <a href="#" title="Xem thêm" class="read-more__txt psc-fw-600">
-                                        Xem thêm
-                                        <span class="material-icons"> navigate_next </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-7" bis_skin_checked="1">
-                            <div class="dashboard-right pb-4" bis_skin_checked="1">
-                                <img src="/assets/img/home/11434230122021dashboard.gif" alt="invalid img" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
+                 @await Html.GetBlockGridHtmlAsync(Model.Dashboard)  
                 </div>
             </div>
             <!-- END SIS DASHBOARD-->
@@ -362,8 +210,6 @@
                 </div>
             </div>
             <!-- END SIGNUP FOR TRIAL-->
-
-
         </div>
     </div>
 </body>
