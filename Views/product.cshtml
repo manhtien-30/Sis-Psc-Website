@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-
+    <link rel="stylesheet" href="@Url.Content("~/css/blockgrid.css")" />
     <link rel="stylesheet" href="/assets/fontawesome-5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/toastify-5.7.1/toastify.min.css">
@@ -105,95 +105,14 @@
             <!-- SIS, PORTAL & MOBILE APP -->
             <div class="page-sis psc-bg-light py-4 mb-md-4" bis_skin_checked="1">
                 <div class="container" bis_skin_checked="1">
-                    <div class="text-center pt-md-4" bis_skin_checked="1">
-                        <h3 class="page-sis__title text-uppercase fs-5">
-                            SIS, PORTAL &amp; MOBILE APP
-                        </h3>
-                        <h2 class="page-sis__about fs-1 psc-fw-600 mb-3 mb-md-5 text-capitalize">
-                            Chặt chẽ và hiệu quả
-                        </h2>
-                    </div>
-                    <div class="page-sis-content row" bis_skin_checked="1">
-                        <div class="page-sis-content-right col-lg-7 text-center order-lg-2 py-3 mb-3" bis_skin_checked="1">
-                            <img src="/assets/img/product/11443430122021moodle-1.gif" alt="invalid img" class="img-fluid psc-box-shadow">
-                        </div>
-                        <div class="page-sis-content-left col-lg-5 order-lg-1" bis_skin_checked="1">
-                            <div class="d-flex mb-4" bis_skin_checked="1">
-                                <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
-                                    <img src="/assets/img/icons/icon-eye.svg" alt="" class="img-fluid">
-                                </div>
-                                <h4 class="page-sis-content-left__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
-                                    Trực quan
-                                </h4>
-                            </div>
-                            <p class="page-sis-content-left__description">
-                                Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
-                                <br>
-                                <br>Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
-                            </p>
-                            <div class="page-sis-content-left-trial py-4" bis_skin_checked="1">
-                                <a href="/assets/img/product/11443430122021moodle-1.gif" target="_blank" class="btn btn-primary py-3 px-5 rounded-pill text-uppercase psc-fw-500 display-6" bis_skin_checked="1">
-                                    Đăng ký dùng thử
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                @await Html.GetBlockGridHtmlAsync(Model.Sis_portal)
                 </div>
             </div>
             <!-- END SIS, PORTAL & MOBILE APP -->
             <!-- DASHBOARD & BAO CAO -->
             <div class="page-dashboard pt-4 pb-4" bis_skin_checked="1">
                 <div class="container" bis_skin_checked="1">
-                    <div class="text-center" bis_skin_checked="1">
-                        <h3 class="page-dashboard__title text-uppercase fs-5">
-                            DASHBOARD VÀ BÁO CÁO
-                        </h3>
-                        <h2 class="page-dashboard__about fs-1 psc-fw-600 mb-4 mb-md-5 text-capitalize">
-                            Đầy đủ và trực quan
-                        </h2>
-                    </div>
-                    <div class="page-dashboard-bg py-4" bis_skin_checked="1">
-                        <div class="page-dashboard-row row mb-5" bis_skin_checked="1">
-                            <div class="page-dashboard-row-left col-lg-7 d-flex align-items-center mb-lg-0 mb-4" bis_skin_checked="1">
-                                <div class="w-75 mx-auto" bis_skin_checked="1">
-                                    <img src="/assets/img/product/0937271410202109354114102021dashboard_academic_result_statistic.png" class="page-dashboard-row__img img-fluid">
-                                </div>
-                            </div>
-                            <div class="page-dashboard-row-right col-lg-5" bis_skin_checked="1">
-                                <div class="d-flex mb-4" bis_skin_checked="1">
-                                    <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
-                                        <img src="/assets/img/icons/icon-file-full.svg" alt="" class="img-fluid">
-                                    </div>
-                                    <h4 class="page-dashboard-row__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
-                                        Đầy đủ
-                                    </h4>
-                                </div>
-                                <p class="page-dashboard-row__description">
-                                    Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="page-dashboard-row row" bis_skin_checked="1">
-                            <div class="page-dashboard-row-right col-lg-6 order-lg-2 mb-4 text-center" bis_skin_checked="1">
-                                <img src="/assets/img/product/09374314102021dashboard_enrollment_statistic.png" class="page-dashboard-row__img img-fluid">
-                            </div>
-                            <div class="page-dashboard-row-left col-lg-6 order-lg-1 d-flex align-items-center mb-3 mb-lg-0" bis_skin_checked="1">
-                                <div bis_skin_checked="1">
-                                    <div class="d-flex mb-4" bis_skin_checked="1">
-                                        <div class="psc-icon-small d-flex align-items-center justify-content-center flex-shrink-0" bis_skin_checked="1">
-                                            <img src="/assets/img/icons/icon-eye.svg" alt="" class="img-fluid">
-                                        </div>
-                                        <h4 class="page-dashboard-row__title psc-fw-600 fs-3 d-flex align-items-center flex-grow-1 ms-3 mb-0">
-                                            Trực quan
-                                        </h4>
-                                    </div>
-                                    <p class="page-dashboard-row__description">
-                                        Kênh giao tiếp thông tin giữa Giáo viên và Phụ huynh, Học sinh, Nhà trường. Giáo viên có chức năng nhập điểm, xem thời khóa biểu giảng dạy, đánh giá tiết học, điểm danh, quản lý thông tin, điểm số của lớp chủ nhiệm,... cùng nhiều chức năng khác phục vụ công tác giảng dạy.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @await Html.GetBlockGridHtmlAsync(Model.Dashboard)
                 </div>
             </div>
             <!-- END DASHBOARD & BAO CAO -->

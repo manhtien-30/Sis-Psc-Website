@@ -18,7 +18,7 @@ using Umbraco.Extensions;
 
 namespace Umbraco.Cms.Web.Common.PublishedModels
 {
-	/// <summary>Home</summary>
+	/// <summary>Trang chủ</summary>
 	[PublishedModel("home")]
 	public partial class Home : PublishedContentModel
 	{
@@ -82,12 +82,12 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel Dashboard => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "dashboard");
 
 		///<summary>
-		/// home card
+		/// homeNav
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "13.2.2+79d241a")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("homeCard")]
-		public virtual string HomeCard => this.Value<string>(_publishedValueFallback, "homeCard");
+		[ImplementPropertyType("homeNav")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel HomeNav => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "homeNav");
 
 		///<summary>
 		/// logo
